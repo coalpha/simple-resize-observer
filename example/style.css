@@ -1,0 +1,56 @@
+html, body {
+   margin: 0;
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   padding: 30px;
+   box-sizing: border-box;
+   background-color: #fdf6e3;
+   display: flex;
+   color: #657b83;
+   font-size: 2vw;
+   font-weight: bold;
+   font-family: "Courier New", C
+}
+
+.container {
+   flex: 1;
+   margin: 0 10px;
+   overflow: hidden;
+}
+
+pre {
+   font-size: 16px;
+   white-space: pre-wrap;
+   word-wrap: normal;
+   border: 4px solid #b58900;
+   margin: 0;
+}
+
+#resize-box {
+   box-sizing: border-box;
+   border: 4px solid #859900;
+   min-width: 30vw;
+   min-height: 20vw;
+   max-width: 100%;
+   max-height: 100%;
+   resize: both;
+   overflow: hidden;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+#resize-box-text {
+   margin: auto;
+}
+
+a {
+   color: #268bd2;
+}
+
+a:visited {
+   color: #6c71c4;
+}

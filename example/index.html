@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>browser-zoom-listener</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="vendor/hljs/styles/solarized-light.css">
+   <script src="../dist/lib.iife.js"></script>
+   <script src="vendor/hljs/highlight.pack.js"></script>
+</head>
+<body>
+   <div class="container">
+      <div id="resize-box">
+         <span id="resize-box-text"></span>
+      </div>
+   </div>
+   <div class="container">
+      <pre><code class="langauge-javascript">const d = document;
+const resizeBox = d.getElementById("resize-box");
+const resizeBoxText = d.getElementById("resize-box-text");
+new SimpleResizeObserver(resizeBox, box => {
+   const { width, height } = box.contentRect;
+   const date = new Date().toLocaleTimeString();
+   resizeBoxText.innerText = `${width|0}px by ${height|0}px\nUpdated at ${date}`;
+});</code></pre>
+      <a href="https://github.com/coarchive/simple-resize-observer">Repo & Docs</a>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>

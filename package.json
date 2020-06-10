@@ -1,0 +1,46 @@
+{
+   "name": "simple-resize-observer",
+   "version": "0.0.1",
+   "description": "A more simple ResizeObserver",
+   "author": "coalpha",
+
+   "repository": "github:coalpha/simple-resize-observer",
+   "homepage": "https://github.com/coalpha/simple-resize-observer",
+   "bugs": "https://github.com/coalpha/simple-resize-observer/issues",
+
+   "files": [
+      "src/*",
+      "dist/*",
+      "vendor/ResizeObserver.ts"
+   ],
+
+   "directories": {
+      "example": "example/"
+   },
+
+   "main": "dist/lib.cjs",
+   "browser": "dist/lib.cjs",
+   "types": "src/lib.cjs.d.ts",
+   "module": "dist/lib.mjs",
+
+   "scripts": {
+      "start": "rollup -c"
+   },
+
+   "keywords": [
+      "browser",
+      "resize",
+      "event",
+      "listener",
+      "simple"
+   ],
+
+   "license": "UNLICENCED",
+
+   "devDependencies": {
+      "rollup": "^2.14.0",
+      "rollup-plugin-terser": "^6.1.0",
+      "rollup-plugin-typescript2": "^0.27.1",
+      "typescript": "^3.9.5"
+   }
+}
