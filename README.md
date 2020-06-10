@@ -2,5 +2,5 @@
 
 This was nearly a thing...
 
-[**README**](https://github.com/coarchive/2020.06.09)
+[**README**](https://github.com/coarchive/bzl-sro)
 
